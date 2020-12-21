@@ -1,0 +1,34 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.appBar .back {
+  background-color: blue;
+}
+
+.appBar .logo {
+  background-color: yellow;
+}
+
+.appBar .burger {
+  background-color: blue;
+}
+
+.links .home {
+  background-color: blue;
+}
+
+.links .gallery {
+  background-color: yellow;
+}
+
+.links .contact {
+  background-color: green;
+}
+
+.links .about {
+  background-color: red;
+}
+/*# sourceMappingURL=style.css.map */

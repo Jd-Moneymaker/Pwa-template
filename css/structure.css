@@ -1,0 +1,43 @@
+.myContainer{
+    display: grid;
+    width: 100%;
+}
+
+/* media query for appBar, disappears on large screen sizes */
+@media(max-width: 800px) {
+    .appBar{
+        display: grid;
+        visibility: visible;
+        grid-template-columns: 50px 1fr 50px;
+        /* adds height to the appBar grid */
+        grid-template-rows: 50px;
+    }
+
+    /* hides webBar on small screen sizes */
+    .webBar{
+        display: none;
+    }
+}
+
+/* media query for webBar, disappears on small screen sizes */
+@media(min-width: 801px) {
+    .webBar{
+        display: grid;
+        visibility: visible;
+        grid-template-columns: 1fr 3fr;
+        /* adds height to the webBar grid */
+        grid-template-rows: 50px;
+    }
+    
+    /* hides appBar on large screen sizes */
+    .appBar{
+        display: none;
+    }
+}
+
+/* adds equal spacing to linkls */
+.links{
+    display: grid;
+    width: 100%;
+    grid-template-columns:repeat(4, 1fr);
+}
